@@ -1,0 +1,140 @@
+#container {
+  margin-top: 1vh;
+  margin-top: 1svh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
+  background-color: var(--grey_dark);
+  height: 93vh;
+  height: 93svh;
+  border-radius: var(--b_radius);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  padding: 0.5rem;
+}
+
+/* left ################################### */
+#left {
+  flex-basis: calc(50% - var(--gap));
+  height: 100%;
+
+  background-color: var(--grey_medium);
+  border-radius: var(--b_radius);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  gap: var(--gap);
+}
+
+#time_line {
+  flex-basis: calc(15% - var(--gap));
+  background-color: var(--grey_dark);
+  border-radius: var(--b_radius);
+  overflow: hidden;
+}
+
+#task_time_line {
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: var(--gap);
+  padding: 0.5rem;
+}
+
+#task_time_line > div {
+  background-color: var(--blue_light);
+  padding: 1rem;
+  border-radius: var(--b_radius);
+  cursor: pointer;
+}
+
+#task_time_line > div:hover {
+  background-color: var(--blue_medium);
+}
+
+#list {
+  flex-basis: calc(85% - var(--gap));
+  background-color: var(--grey_dark);
+  border-radius: var(--b_radius);
+  overflow: hidden;
+}
+
+#task_list {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: var(--gap);
+  padding: 0.5rem;
+}
+
+#task_list > div {
+  background-color: var(--blue_light);
+  padding: 1rem;
+  border-radius: var(--b_radius);
+  width: 100%;
+  cursor: pointer;
+}
+
+#task_list > div:hover {
+  background-color: var(--blue_medium);
+}
+
+
+/* right ################################### */
+#right {
+  flex-basis: calc(50% - var(--gap));
+  height: 100%;
+
+  background-color: var(--grey_medium);
+  border-radius: var(--b_radius);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  gap: var(--gap);
+}
+
+#graphs,
+#history {
+  flex-basis: calc(30% - var(--gap));
+  background-color: var(--grey_dark);
+  border-radius: var(--b_radius);
+  overflow: hidden;
+}
+
+
+#task_notes,
+#daily_notes{
+  flex-basis: calc(20% - var(--gap));
+  background-color: var(--grey_dark);
+  border-radius: var(--b_radius);
+  overflow: hidden;
+}
+
+#task_text,
+#daily_text {
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--grey_dark);
+  color: white;
+  border-radius: var(--b_radius);
+}
+#task_text::placeholder,
+#daily_text::placeholder {
+  color: var(--grey_light);
+}
+
+
